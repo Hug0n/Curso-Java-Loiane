@@ -1,0 +1,43 @@
+package com.loiane.cursojava.aula17exerc.Loops;
+
+import java.util.Scanner;
+
+public class Questao17 {
+
+	public static void main(String[] args) {
+		
+		int numInserido = 0;
+		int resultado = 1;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println (" Insira um número: ");
+		numInserido = scan.nextInt();
+
+		resultado = numInserido;
+
+		if (numInserido != 0){
+
+			for ( int countResult = numInserido; countResult > 0;  ){
+				
+				countResult--;
+				int total = 0;
+				total += resultado * countResult;
+				System.out.println(total);
+			}//fim do for
+			
+			System.out.println ("O resultado do fatorial do número " + numInserido + " é " + resultado );
+			
+		} //fim do if
+
+		else{
+			
+			System.out.println ("Insira um valor diferente de 0!");
+		}
+
+
+		}//fim do main
+
+
+	}
+

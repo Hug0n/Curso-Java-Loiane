@@ -1,0 +1,33 @@
+package com.loiane.cursojava.aula17exerc.Loops;
+
+import java.util.Scanner;
+
+public class Questao1 {
+	
+	public static void main(String[] args) {
+		
+		boolean valida = true;
+		int valor;
+		int resposta; 
+		
+		Scanner scan = new Scanner (System.in);
+				
+		System.out.println("Insira um número de 1 à 10");
+		valor = scan.nextInt();
+		
+		while ( valor < 0 || valor > 10 && valida == true){
+			
+			System.out.println("Você não inseriu um valor entre 0 à 10! Deseja inserir novamente? 1 - Sim  2 - Não");
+			resposta = scan.nextInt();
+			
+			if (resposta ==2){
+				
+				valida = false;
+				
+			}
+		}
+		
+		System.out.print("O valor inserido foi " + valor);
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;valorAumento&apos; in &apos;com.loiane.cursojava.aula15exerc.Questao11.main(...)&apos; to &apos;percentualAumento&apos;&#x0D;&#x0A;- Original project: &apos;Curso_Java_Loiane&apos;&#x0D;&#x0A;- Original element: &apos;com.loiane.cursojava.aula15exerc.Questao11.main(String[]).valorAumento&apos;&#x0D;&#x0A;- Renamed element: &apos;valorAumento&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;valorAumento&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.loiane.cursojava.aula15exerc{Questao11.java[Questao11~main~\[QString;@valorAumento!171!187!175!186!I!0!false" name="percentualAumento" references="true" stamp="1516423916825" version="1.0"/>
+</session>

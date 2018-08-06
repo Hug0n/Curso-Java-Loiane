@@ -1,0 +1,40 @@
+package com.loiane.cursojava.aula17exerc.Loops;
+
+import java.util.Scanner;
+
+public class Questao1 {
+	
+	public static void main(String[] args) {
+		
+		boolean valida = true;
+		String user = "";
+		int password = 0;
+		int resposta; 
+		
+		Scanner scan = new Scanner (System.in);
+				
+		while (valida == true){
+			
+			System.out.println("Insira um Usuário: ");
+			user = scan.nextLine();
+			System.out.println("Insira uma Senha: ");
+			password = scan.nextInt();
+			
+			if (valor < 0 || valor > 10){
+				
+				System.out.println("Você não inseriu um valor entre 0 à 10! Deseja inserir novamente? 1 - Sim  2 - Não");
+				resposta = scan.nextInt();
+			
+				if (resposta == 2){
+					valida = false;
+				}
+			}
+			else {
+				valida = false;
+			}
+		}
+		
+		System.out.print("O valor inserido foi " + valor);
+		
+	}
+}

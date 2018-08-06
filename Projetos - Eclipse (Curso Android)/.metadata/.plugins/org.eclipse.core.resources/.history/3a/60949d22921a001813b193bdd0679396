@@ -1,0 +1,26 @@
+package com.loiane.cursojava.aula17exerc.Loops;
+
+import java.util.Scanner;
+
+public class Questao19 {
+
+	public static void main(String[] args) {
+		
+		int numInserido = 0;
+		int resultado = 1;
+		int quantInserida = 0;
+		int total = 0;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println ("Quantas notas você deseja inserir?");
+		quantInserida = scan.nextInt();
+
+		for (int i = quantInserida; i > 0; i--){
+			
+			System.nanoTime();
+		}
+		
+
+	}
+}

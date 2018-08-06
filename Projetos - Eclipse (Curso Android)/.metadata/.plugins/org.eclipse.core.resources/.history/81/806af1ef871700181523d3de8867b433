@@ -1,0 +1,40 @@
+package com.loiane.cursojava.aula17exerc.Loops;
+
+import java.util.Scanner;
+
+public class Questao17 {
+
+	public static void main(String[] args) {
+		
+		int numInserido = 0;
+		int ExpoentePot = 0;
+		int resultado = 1;
+
+		int count = 5; // contador igual a 5 no loop FOR
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println (" Insira um número: ");
+		numInserido = scan.nextInt();
+
+		resultado = numInserido;
+
+		if (numInserido != 0){
+
+			for ( int countResult = numInserido; countResult > 0;  ){
+				
+				countResult--;
+				resultado += resultado * numInserido;
+			}//fim do for
+		} //fim do if
+
+		else{
+			
+			System.out.println ("Insira um valor diferente de 0!");
+		}
+
+
+		}//fim do main
+
+
+	}
+

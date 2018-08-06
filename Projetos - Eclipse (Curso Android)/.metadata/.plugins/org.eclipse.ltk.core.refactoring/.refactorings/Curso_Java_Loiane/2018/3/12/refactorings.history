@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;increaseValorProduct&apos; in &apos;com.loiane.cursojava.aula17exerc.Loops.Questao24.main(...)&apos; to &apos;numInserido&apos;&#x0D;&#x0A;- Original project: &apos;Curso_Java_Loiane&apos;&#x0D;&#x0A;- Original element: &apos;com.loiane.cursojava.aula17exerc.Loops.Questao24.main(String[]).increaseValorProduct&apos;&#x0D;&#x0A;- Renamed element: &apos;increaseValorProduct&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;increaseValorProduct&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.loiane.cursojava.aula17exerc.Loops{Questao24.java[Questao24~main~\[QString;@increaseValorProduct!128!162!135!154!D!0!false" name="numInserido" references="true" stamp="1521404363597" version="1.0"/>
+</session>

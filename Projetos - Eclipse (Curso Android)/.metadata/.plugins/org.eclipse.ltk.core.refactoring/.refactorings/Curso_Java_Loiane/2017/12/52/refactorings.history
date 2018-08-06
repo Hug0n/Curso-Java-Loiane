@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;com.loiane.cursojava.aula12.LeituraDadosTeclado.main().scan&apos; in &apos;com.loiane.cursojava.aula12.LeituraDadosTeclado.main()&apos; to field&#x0D;&#x0A;- Original project: &apos;Curso_Java_Loiane&apos;&#x0D;&#x0A;- Original element: &apos;com.loiane.cursojava.aula12.LeituraDadosTeclado.main().scan&apos;&#x0D;&#x0A;- Field name: &apos;scan&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;scan&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;com.loiane.cursojava.aula12{LeituraDadosTeclado.java" name="scan" selection="164 30" stamp="1514422504675" static="true" version="1.0" visibility="2"/>
+</session>

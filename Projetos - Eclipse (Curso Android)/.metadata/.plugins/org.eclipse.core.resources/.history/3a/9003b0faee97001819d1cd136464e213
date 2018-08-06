@@ -1,0 +1,77 @@
+package matriz.exerc.a20;
+
+import java.util.Scanner;
+
+public class Q6 {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+
+		int[][] JogoDaVelha = new int [3][3];
+		
+		Scanner e = new Scanner(System.in);
+
+		System.out.println("Bem vindo ao Jogo da Velha! Jogador X e Y preparados?");
+		int game = 1;
+		int linha = 10;
+		int coluna = 10;
+		
+		while (game == 1) {
+			String jogador = "X";
+			System.out.println(" Jogador" + jogador + ": Digite a linha e a coluna desejada");
+			linha = e.nextInt();
+			coluna = e.nextInt();
+			
+			//validação da inserção
+			
+			if(linha > 3 || linha < 1 ) {
+				System.out.println("Linha inválida! Tente novamente");
+
+			}else if (coluna > 3 || coluna < 1 ) {
+				System.out.println("Coluna inválida! Tente novamente");
+			}
+			else { //validação se o valor da posição é NULL	
+				Integer posicao = JogoDaVelha[linha][coluna];
+				if (posicao != null) {
+					int verify = 0;
+					if (jogador.equals("X")){
+						JogoDaVelha[linha][coluna] = 1;
+					 	//verificação nas linhas X X X
+						for(int i=0; i < JogoDaVelha.length; i++) {
+							verify = 0; // verify RESETADO na prox linha
+							for(int j=0; j < JogoDaVelha.length; j++) {
+								if (JogoDaVelha[i][j] == 1) {
+									verify++;
+									if (verify == 3) {
+										System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+									}
+								}
+							}
+						}
+					}else if (jogador.equals("Y")){
+						JogoDaVelha[linha][coluna] = 0;
+					 	//verificação nas linhas
+						for(int i=0; i < JogoDaVelha.length; i++) {
+							for(int j=0; j < JogoDaVelha.length; j++) {
+								
+							}
+						}
+					}
+
+					//verificação nas linhas
+					for(int i=0; i < JogoDaVelha.length; i++) {
+						for(int j=0; j < JogoDaVelha.length; j++) {
+							
+						}
+					}
+				}
+				else {
+					System.out.println("Já existe um valor nessa posição! Tente novamente!");
+				}
+			}
+				
+		
+	
+		}
+	}
+}

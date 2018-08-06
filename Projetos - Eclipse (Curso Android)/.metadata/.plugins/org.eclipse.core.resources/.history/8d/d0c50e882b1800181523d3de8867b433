@@ -1,0 +1,58 @@
+package com.loiane.cursojava.aula17exerc.Loops;
+
+import java.util.Scanner;
+
+public class Questao13 {
+
+	public static void main(String[] args) {
+		
+		int basePot = 0;
+		int ExpoentePot = 0;
+		int resultado = 1;
+
+		int count = 5; // contador igual a 5 no loop FOR
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println (" Insira a base da potência: ");
+		basePot = scan.nextInt();
+
+		System.out.println (" Insira o expoente: ");
+		ExpoentePot = scan.nextInt();
+		
+		resultado = basePot;
+
+		if (basePot != 0){
+
+			for ( int i = ExpoentePot; i > 0; i-- ){
+				
+				resultado += resultado * basePot;
+				System.out.print(resultado);
+			}//fim do for
+		} //fim do if
+
+		if (basePot ==0){
+
+			System.out.println ("Para base 0 o resultado é sempre 0!");
+		}// fim do if 1
+
+		else if (ExpoentePot == 1){
+			
+			System.out.println ("Para expoente 1 o resultado é a própria base: " + basePot);
+		}//fim do else if 1
+
+		else if (ExpoentePot == 0){
+			
+			System.out.println ("Para expoente 0 o resultado da potênciação é o número 1!");
+		}//fim do else if 2
+
+		else{
+			
+			System.out.println ("O resultado da potenciação com base " + basePot + " e expoente " + ExpoentePot + " é " + resultado + " !");
+		}
+
+
+		}//fim do main
+
+
+	}
+

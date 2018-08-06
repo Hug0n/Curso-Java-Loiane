@@ -1,0 +1,32 @@
+package com.loiane.cursojava.aula17exerc.Loops;
+
+import java.util.Scanner;
+
+public class Questao20 {
+
+	public static void main(String[] args) {
+		
+		int numInserido = 0;
+		int resultado = 1;
+		int quantInserida = 0;
+		float total = 0;
+
+		Scanner scan = new Scanner(System.in);
+
+		System.out.println ("Quantas notas você deseja inserir?");
+		quantInserida = scan.nextInt();
+
+		for (int i = quantInserida; i > 0; i--){
+			
+			System.out.println("Insira um número");
+			numInserido = scan.nextInt();
+			
+			resultado += numInserido;
+		}
+		
+		total = resultado / quantInserida;
+		
+		System.out.println("A média aritmética das " + quantInserida + " notas inseridas é " + total);
+
+	}
+}

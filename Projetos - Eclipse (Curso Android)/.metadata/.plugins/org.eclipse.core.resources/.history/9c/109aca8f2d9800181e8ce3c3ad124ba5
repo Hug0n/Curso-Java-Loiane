@@ -1,0 +1,225 @@
+package matriz.exerc.a20;
+
+import java.util.Scanner;
+
+public class Q6 {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+
+		int[][] JogoDaVelha = new int[3][3];
+
+		Scanner e = new Scanner(System.in);
+
+		System.out.println("Bem vindo ao Jogo da Velha! Jogador X e Y preparados?");
+		int game = 1;
+		int linha = 10;
+		int coluna = 10;
+		String jogador = "X";
+		
+		while (game == 1) {
+			
+			System.out.println(" Jogador" + jogador + ": Digite a linha e a coluna desejada");
+			linha = e.nextInt();
+			coluna = e.nextInt();
+			linha--;
+			coluna--;
+			// validação da inserção
+
+			if (linha > 2 || linha < 0) {
+				System.out.println("Linha inválida! Tente novamente");
+
+			} else if (coluna > 2 || coluna < 0) {
+				System.out.println("Coluna inválida! Tente novamente");
+			} else { // validação se o valor da posição é NULL
+				Integer posicao = JogoDaVelha[linha][coluna];
+
+				if (posicao == 0) {
+					int verify = 0;
+
+					// PLAYER X
+
+					if (jogador.equals("X")) {
+						JogoDaVelha[linha][coluna] = 1;
+
+						// verificação nas linhas X X X
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+							verify = 0; // verify RESETADO na prox linha
+							for (int j = 0; j < JogoDaVelha.length; j++) {
+								if (JogoDaVelha[i][j] == 1) {
+									verify++;
+									if (verify == 3) {
+										System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+										break;
+									}
+								}
+							}
+						}
+						// verificação nas diagonais
+						// com incrementador de coluna diagonal direita esquerda
+
+						int marcaLinha = 2;
+						int marcaColuna = 2;
+						verify = 0;
+
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+							if (JogoDaVelha[marcaLinha][marcaColuna] == 1) {
+								verify++;
+								if (verify == 3) {
+									System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+									break;
+								}
+							}
+							marcaLinha--;
+							marcaColuna--;
+						}
+
+						// verificação nas diagonais
+						// com incrementador de coluna diagonal esquerda direita
+
+						marcaLinha = 0;
+						marcaColuna = 0;
+						verify = 0;
+
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+
+							if (JogoDaVelha[marcaLinha][marcaColuna] == 1) {
+								verify++;
+								if (verify == 3) {
+									System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+									break;
+								}
+							}
+							marcaLinha++;
+							marcaColuna++;
+						}
+
+						// verificação nas colunas
+						// com incrementador de coluna e linha
+
+						marcaLinha = 0;
+						marcaColuna = 0;
+						verify = 0;
+
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+							for (int j = 0; j < JogoDaVelha[i].length; j++) {
+								if (JogoDaVelha[j][marcaColuna] == 1) {
+									verify++;
+									if (verify == 3) {
+										System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+										break;
+									}
+								}
+								//marcaLinha++;
+							}
+							marcaColuna++;
+							verify = 0;
+						}
+					} // END PLAYER X
+
+					// PLAYER Y
+
+					else if (jogador.equals("Y")) {
+						JogoDaVelha[linha][coluna] = 2;
+
+						// verificação nas linhas X X X
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+							verify = 0; // verify RESETADO na prox linha
+							for (int j = 0; j < JogoDaVelha.length; j++) {
+								if (JogoDaVelha[i][j] == 2) {
+									verify++;
+									if (verify == 3) {
+										System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+										break;
+									}
+								}
+							}
+						}
+						// verificação nas diagonais
+						// com incrementador de coluna diagonal direita esquerda
+
+						int marcaLinha = 2;
+						int marcaColuna = 2;
+						verify = 0;
+
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+
+							if (JogoDaVelha[marcaLinha][marcaColuna] == 2) {
+								verify++;
+								if (verify == 3) {
+									System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+									break;
+								}
+							}
+							marcaLinha--;
+							marcaColuna--;
+						}
+
+						// verificação nas diagonais
+						// com incrementador de coluna diagonal esquerda direita
+
+						marcaLinha = 0;
+						marcaColuna = 0;
+						verify = 0;
+
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+
+							if (JogoDaVelha[marcaLinha][marcaColuna] == 2) {
+								verify++;
+								if (verify == 3) {
+									System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+									break;
+								}
+							}
+							marcaLinha++;
+							marcaColuna++;
+						}
+
+						// verificação nas colunas
+						// com incrementador de coluna e linha
+
+						marcaLinha = 0;
+						marcaColuna = 0;
+						verify = 0;
+
+						for (int i = 0; i < JogoDaVelha.length; i++) {
+							for (int j = 0; j < JogoDaVelha[i].length; j++) {
+								if (JogoDaVelha[j][marcaColuna] == 2) {
+									verify++;
+									if (verify == 3) {
+										System.out.println("O jogador " + jogador + " ganhou! Parabéns! ");
+										break;
+									}
+								}
+								//marcaLinha++;
+							}
+							marcaColuna++;
+							verify = 0;
+						}
+					} // END PLAYER Y
+
+					System.out.println("A rodada acabou com a seguinte tabela da velha: \n");
+
+					for (int i = 0; i < JogoDaVelha.length; i++) {
+						for (int j = 0; j < JogoDaVelha[i].length; j++) {
+							System.out.print("| " + JogoDaVelha[i][j] + " |");
+						}
+						System.out.print(" \n");
+					}
+					
+					//Trocar os jogadores
+					
+					if (jogador.equals("X")) {
+						jogador = "Y";
+					} else if (jogador.equals("Y")){
+						jogador = "X";
+					}
+					
+				} else {
+					System.out.println("Já existe um valor nessa posição! Tente novamente!");
+				}
+			}
+		}
+		System.out.println("Parabéns " + jogador + "! Nos vemos na revanche!");
+	}
+}
