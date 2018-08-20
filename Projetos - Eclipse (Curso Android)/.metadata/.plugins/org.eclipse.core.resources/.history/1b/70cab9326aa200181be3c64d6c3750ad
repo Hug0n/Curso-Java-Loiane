@@ -1,0 +1,27 @@
+package com.loiane.cursojava.aula25a27exerc.Classes_e_Metodos.exerc2;
+
+public class ContaCorrente {
+	
+	int número;
+	double saldo;
+	boolean contaEspecial;
+	double limite;
+	
+	
+	void sacar() {
+		
+	}
+	
+	void depositar() {
+		
+	}
+	
+	void consultar(){
+				
+	}
+	
+	void verificarChequeEspecial() {
+		
+	}
+
+}

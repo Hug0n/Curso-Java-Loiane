@@ -1,0 +1,33 @@
+package com.loiane.cursojava.aula25a27exerc.Classes_e_Metodos.exerc1;
+
+public class Lampada {
+	
+	
+	int id;
+	String modelo;
+	String marca;
+	boolean estado;
+	
+	void ligar() {
+		estado = true;
+	}
+	
+	void desligar() {
+		estado = false;
+	}
+	
+	void mudarEstado() {
+		if (estado = false) {
+			estado = true;
+			System.out.println("A lâmpada foi ligada!");
+		}
+		else if (estado = true) {
+			estado = false;
+			System.out.println("A lâmpada foi desligada!");
+		}
+	}
+	
+	
+	
+
+}

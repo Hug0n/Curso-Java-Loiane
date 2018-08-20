@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;matriz.exerc.a20&apos; to &apos;Curso_Java_Loiane/src/com.loiane.cursojava.aula20exerc.Matriz&apos;&#x0D;&#x0A;- Original project: &apos;Loiane Curso&apos;&#x0D;&#x0A;- Destination element: &apos;Curso_Java_Loiane/src/com.loiane.cursojava.aula20exerc.Matriz&apos;&#x0D;&#x0A;- Original element: &apos;Loiane Curso/src/matriz.exerc.a20&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=Curso_Java_Loiane/src&lt;com.loiane.cursojava.aula20exerc.Matriz" element1="/src&lt;matriz.exerc.a20" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1534541288897" version="1.0"/>
+</session>

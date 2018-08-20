@@ -1,0 +1,10 @@
+package com.loiane.cursojava.aula25a27exerc.Classes_e_Metodos.exerc2;
+
+public class TesteContaCorrent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
