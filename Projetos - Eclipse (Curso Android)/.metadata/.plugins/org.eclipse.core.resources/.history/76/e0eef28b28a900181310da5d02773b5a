@@ -1,0 +1,20 @@
+package com.loiane.cursojava.aula34exerc.variav_e_method_static.exerc4;
+
+public class ConversaoDeUnidadesDeArea {
+
+	void conversMetroQuadrado() {
+
+	}
+
+	void conversPeQuadrado() {
+
+	}
+
+	void conversMilhaQuadrado() {
+
+	}
+
+	void conversAcre() {
+
+	}
+}

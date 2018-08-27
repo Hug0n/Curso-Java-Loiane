@@ -1,0 +1,30 @@
+package com.loiane.cursojava.aula28a33exerc.Const_Encaps_OverL.exerc1;
+
+public class Lampada {
+
+	private int id;
+	private String modelo;
+	private String marca;
+	private boolean estado;
+	
+	void ligar() {
+		estado = true;
+	}
+	
+	void desligar() {
+		estado = false;
+	}
+	
+	void mudarEstado() {
+		if (!estado) {
+			ligar();
+			System.out.println("A lâmpada foi ligada!  Estado = " + estado);
+		}
+		else if (estado) {
+			desligar();
+			System.out.println("A lâmpada foi desligada!  Estado = " + estado);
+		}
+	}
+	
+	
+}

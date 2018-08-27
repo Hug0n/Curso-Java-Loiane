@@ -1,0 +1,57 @@
+package com.loiane.cursojava.aula34exerc.variav_e_method_static.exerc2;
+
+import java.util.Scanner;
+
+import com.loiane.cursojava.aula28a33exerc.Const_Encaps_OverL.exerc2.ContaCorrente;
+
+public class TesteCalculadora {
+
+	public static void main(String[] args) {
+
+		static Scanner e = new Scanner(System.in);
+
+		
+		System.out.println();
+
+
+		boolean loop = true;
+		int opcao = 0;
+
+		Caaculadora calculator = Pessoa1;
+		nomePessoa = "Pessoa 1";
+
+		while (loop) {
+
+			System.out.println("\nQual operação deseja executar " + nomePessoa + "?");
+			System.out.println("1 - Saque");
+			System.out.println("2 - Depósito");
+			System.out.println("3 - Consulta");
+			System.out.println("4 - Informações sobre Conta Especial");
+			System.out.println("5 - Trocar de Usuário");
+			System.out.println("6 - Sair");
+
+			opcao = e.nextInt();
+
+			if (opcao == 1) {
+				System.out.println("Digite o valor do saque: ");
+				variavelPessoa.sacar(e.nextDouble());
+			} else if (opcao == 2) {
+				System.out.println("Digite o valor do depósito: ");
+				variavelPessoa.depositar(e.nextDouble());
+			} else if (opcao == 3) {
+				variavelPessoa.consultar();
+			} else if (opcao == 4) {
+				variavelPessoa.verificarChequeEspecial();
+			} else if (opcao == 5) {
+				variavelPessoa = verificarPessoa(variavelPessoa);
+			} else if (opcao == 6) {
+				loop = false;
+				System.out.println("Agradecemos a sua preferência. Queremos te ver de novo em breve!");
+
+			}
+		}
+	
+
+	}
+
+}

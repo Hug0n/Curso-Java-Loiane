@@ -1,0 +1,37 @@
+package com.loiane.cursojava.aula34exerc.variav_e_method_static.exerc4;
+
+public class TesteConversao {
+
+	public static void main(String[] args) {
+		
+		outputVariaveis();
+
+		System.out.println(	"\nPés: " + ConversaoDeUnidadesDeArea.conversPeQuadrado(5));
+		outputVariaveis();
+		
+
+		System.out.println(	"\nMetro: " + ConversaoDeUnidadesDeArea.conversMetroQuadrado(5));
+		outputVariaveis();
+		
+		
+		System.out.println(	"\nMilha: " + ConversaoDeUnidadesDeArea.conversMilhaQuadrada(5));
+		outputVariaveis();
+		
+		
+		System.out.println(	"\nAcres: " + ConversaoDeUnidadesDeArea.conversAcre(5));
+		outputVariaveis();
+
+		
+	}
+	
+	static void outputVariaveis() {
+		
+		System.out.println(	"\npeQuadrado: " + ConversaoDeUnidadesDeArea.peQuadrado);
+		System.out.println(	"metroQuadrado: " + ConversaoDeUnidadesDeArea.metroQuadrado);
+		System.out.println(	"milhaQuadrada: " + ConversaoDeUnidadesDeArea.milhaQuadrada);
+		System.out.println(	"Acre: " + ConversaoDeUnidadesDeArea.Acre);
+		System.out.println(	"RESULTADO: " + ConversaoDeUnidadesDeArea.resultado);
+		
+	}
+
+}

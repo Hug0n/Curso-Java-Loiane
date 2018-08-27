@@ -1,2 +1,9 @@
 1534643757119	Move compilation unit
 1534644393165	Rename method 'verificarDiagonais'
+1535156154819	Delete element
+1535156238214	Rename package 'com.loiane.cursojava.aula28a33exerc.Const_Encaps_OverL'
+1535156272630	Delete element
+1535231001313	Rename package 'com.loiane.cursojava.aula34exerc.ariav_e_method_static'
+1535231180731	Encapsulate field 'incrementador'
+1535233066207	Rename package 'com.loiane.cursojava.aula34exerc.variav_e_method_static'
+1535235212120	Convert local variable 'e' to field

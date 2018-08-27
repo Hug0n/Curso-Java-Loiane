@@ -1,0 +1,9 @@
+package com.loiane.cursojava.aula28a33exerc.Const_Encaps_OverL.exerc2;
+
+public class TesteContaCorrente {
+
+	public static void main(String[] args) {
+
+	}
+
+}

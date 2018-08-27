@@ -1,0 +1,68 @@
+package com.loiane.cursojava.aula34exerc.variav_e_method_static.exerc4;
+
+public class TesteConversao {
+
+	public static void main(String[] args) {
+		
+		System.out.println(	"\npeQuadrado: " + ConversaoDeUnidadesDeArea.peQuadrado);
+		System.out.println(	"metroQuadrado: " + ConversaoDeUnidadesDeArea.metroQuadrado);
+		System.out.println(	"milhaQuadrada: " + ConversaoDeUnidadesDeArea.milhaQuadrada);
+		System.out.println(	"Acre: " + ConversaoDeUnidadesDeArea.Acre);
+		
+		System.out.println(	"RESULTADO: " + ConversaoDeUnidadesDeArea.resultado);
+
+
+
+		System.out.println(	"Pés: " + ConversaoDeUnidadesDeArea.conversPeQuadrado(5));
+		
+		System.out.println(	"\\npeQuadrado: " + ConversaoDeUnidadesDeArea.peQuadrado);
+		System.out.println(	"metroQuadrado: " + ConversaoDeUnidadesDeArea.metroQuadrado);
+		System.out.println(	"milhaQuadrada: " + ConversaoDeUnidadesDeArea.milhaQuadrada);
+		System.out.println(	"Acre: " + ConversaoDeUnidadesDeArea.Acre);
+		
+		
+		System.out.println(	"RESULTADO: " + ConversaoDeUnidadesDeArea.resultado);
+		
+		System.out.println(	"\npeQuadrado: " + ConversaoDeUnidadesDeArea.peQuadrado);
+		System.out.println(	"metroQuadrado: " + ConversaoDeUnidadesDeArea.metroQuadrado);
+		System.out.println(	"milhaQuadrada: " + ConversaoDeUnidadesDeArea.milhaQuadrada);
+		System.out.println(	"Acre: " + ConversaoDeUnidadesDeArea.Acre);
+		
+		System.out.println(	"RESULTADO: " + ConversaoDeUnidadesDeArea.resultado);
+		
+
+		System.out.println(	"Metro: " + ConversaoDeUnidadesDeArea.conversMetroQuadrado(5));
+		
+		System.out.println(	"\npeQuadrado: " + ConversaoDeUnidadesDeArea.peQuadrado);
+		System.out.println(	"metroQuadrado: " + ConversaoDeUnidadesDeArea.metroQuadrado);
+		System.out.println(	"milhaQuadrada: " + ConversaoDeUnidadesDeArea.milhaQuadrada);
+		System.out.println(	"Acre: " + ConversaoDeUnidadesDeArea.Acre);
+		
+		System.out.println(	"RESULTADO: " + ConversaoDeUnidadesDeArea.resultado);
+		
+		
+		System.out.println(	"Milha: " + ConversaoDeUnidadesDeArea.conversMilhaQuadrada(5));
+		
+		
+		System.out.println(	"\npeQuadrado: " + ConversaoDeUnidadesDeArea.peQuadrado);
+		System.out.println(	"metroQuadrado: " + ConversaoDeUnidadesDeArea.metroQuadrado);
+		System.out.println(	"milhaQuadrada: " + ConversaoDeUnidadesDeArea.milhaQuadrada);
+		System.out.println(	"Acre: " + ConversaoDeUnidadesDeArea.Acre);
+		
+		System.out.println(	"RESULTADO: " + ConversaoDeUnidadesDeArea.resultado);
+		
+		
+		System.out.println(	"Acres: " + ConversaoDeUnidadesDeArea.conversAcre(5));
+		
+		
+		System.out.println(	"\npeQuadrado: " + ConversaoDeUnidadesDeArea.peQuadrado);
+		System.out.println(	"metroQuadrado: " + ConversaoDeUnidadesDeArea.metroQuadrado);
+		System.out.println(	"milhaQuadrada: " + ConversaoDeUnidadesDeArea.milhaQuadrada);
+		System.out.println(	"Acre: " + ConversaoDeUnidadesDeArea.Acre);
+		
+		System.out.println(	"RESULTADO: " + ConversaoDeUnidadesDeArea.resultado);
+
+		
+	}
+
+}

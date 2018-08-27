@@ -1,0 +1,31 @@
+package com.loiane.cursojava.aula34exerc.variav_e_method_static.exerc4;
+
+public class ConversaoDeUnidadesDeArea {
+	
+	static double peQuadrado = 929; //centímetros
+	static double metroQuadrado =  10.76 * peQuadrado; //conversPeQuadrado(10.76);
+
+	double milhaQuadrada;
+	double Acre;
+
+	static double resultado;
+
+	static double conversMetroQuadrado(double num1) {
+		resultado = metroQuadrado * conversPeQuadrado(num1);
+		return resultado;
+	}
+
+	static double conversPeQuadrado(double num1) {
+		resultado = num1 * peQuadrado; 
+		return resultado;
+	}
+
+	static double conversMilhaQuadrada(double num1) {
+		return resultado;
+	}
+
+	static double conversAcre(double num1) {
+		return resultado;
+
+	}
+}

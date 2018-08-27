@@ -1,0 +1,89 @@
+package com.loiane.cursojava.aula28a33exerc.Const_Encaps_OverL.exerc2;
+
+import java.util.Scanner;
+
+
+public class TesteContaCorrente {
+	
+	 static ContaCorrente Pessoa1 = new ContaCorrente();
+	 static ContaCorrente Pessoa2 = new ContaCorrente(14898, 300, true, 400);
+	 static String nomePessoa;
+	
+	
+
+	public static void main(String[] args) {
+
+		Scanner e = new Scanner(System.in);
+
+		
+		Pessoa1.setIdConta(131);
+		Pessoa1.setSaldo(10);
+		Pessoa1.setLimite(500);
+		Pessoa1.setContaEspecial(false);
+		
+		
+
+		
+		/*
+		Pessoa2.setIdConta(14898);
+		Pessoa2.setSaldo(300);
+		Pessoa2.setLimite(400);
+		Pessoa2.setContaEspecial (true);*/
+		
+		/////// Teste dos METÓDOS
+		
+		boolean loop = true;
+		int opcao = 0;
+		
+		 ContaCorrente variavelPessoa = Pessoa1;
+		 nomePessoa = "Pessoa 1";
+
+			while (loop){
+				
+			System.out.println("\nQual operação deseja executar " + nomePessoa + "?");
+			System.out.println("1 - Saque");
+			System.out.println("2 - Depósito");
+			System.out.println("3 - Consulta");
+			System.out.println("4 - Informações sobre Conta Especial");
+			System.out.println("5 - Trocar de Usuário");
+			System.out.println("6 - Sair");
+			
+			opcao = e.nextInt();
+	
+			if (opcao == 1) {
+				System.out.println("Digite o valor do saque: ");
+				variavelPessoa.sacar(e.nextDouble());
+			}
+			else if (opcao == 2) {
+				System.out.println("Digite o valor do depósito: ");
+				variavelPessoa.depositar(e.nextDouble());
+			}
+			else if (opcao == 3) {
+				variavelPessoa.consultar();
+			}
+			else if (opcao == 4) {
+				variavelPessoa.verificarChequeEspecial();
+			}
+			else if (opcao == 5) {
+				verificarPessoa(variavelPessoa);
+			}
+			else if (opcao == 6) {
+				loop = false;
+			}
+		}
+	}
+	
+	static ContaCorrente verificarPessoa(ContaCorrente variavelPessoa) {
+		if(variavelPessoa == Pessoa1) {
+			variavelPessoa = Pessoa2;
+			nomePessoa = "Pessoa 2";
+		}
+		else {
+			variavelPessoa = Pessoa1;
+			nomePessoa = "Pessoa 1";
+		}
+		System.out.println("Usuário alterado!");
+		return variavelPessoa;
+	}
+
+}
