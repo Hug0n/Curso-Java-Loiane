@@ -1,0 +1,10 @@
+package com.loiane.cursojava.aula36exerc.Relacionamentos_entre_Classes.exerc1;
+
+public class TestAgenda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

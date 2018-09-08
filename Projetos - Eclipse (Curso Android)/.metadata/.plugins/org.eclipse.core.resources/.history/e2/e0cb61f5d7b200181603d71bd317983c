@@ -1,0 +1,17 @@
+package com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1;
+
+public class ContaPoupanca {
+
+	private int diaRendimento;
+
+	//-----
+	
+	public int getDiaRendimento() {
+		return diaRendimento;
+	}
+	public void setDiaRendimento(int diaRendimento) {
+		this.diaRendimento = diaRendimento;
+	}
+	
+	
+}

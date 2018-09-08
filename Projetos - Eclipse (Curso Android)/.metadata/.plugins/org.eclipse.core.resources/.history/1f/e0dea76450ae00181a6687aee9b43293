@@ -1,0 +1,83 @@
+package com.loiane.cursojava.aula36exerc.Relacionamentos_entre_Classes.exerc1;
+
+import java.util.Scanner;
+
+public class TestAgenda {
+
+	private static Scanner e;
+
+	public static void main(String[] args) {
+
+		e = new Scanner(System.in);
+
+		// 3 Contatos
+
+		System.out.println("Quantos contatos deseja Cadastrar na Agenda?");
+		int qtdContacts = e.nextInt();
+
+		if (qtdContacts > 0) {
+
+			Contato[] contatos = new Contato[qtdContacts];
+
+			Contato conta = new Contato();
+			Contato conta2 = new Contato();
+			Contato conta3 = new Contato();
+
+			Contato variavel = new Contato();
+
+			Agenda agenda1 = new Agenda();
+
+			System.out.println("Qual o nome da agenda?");
+			//String nome = e.next();
+			agenda1.setNome(e.next());
+
+			System.out.println("Defina respectivamente o Nome, Telefone e E-mail dos " + (qtdContacts + 1) + " contatos");
+
+			variavel = conta;
+			qtdContacts -= 1;
+
+
+			for (int i = 0; i <= qtdContacts; i++) {
+
+				Contato a = new Contato();
+				System.out.println(i);
+
+				variavel.setNome(e.next());
+				variavel.setTelefone(e.next());
+				variavel.setEmail(e.next());
+				
+
+				contatos[i] = variavel;
+
+				if (variavel == conta) {
+					variavel = conta2;
+				} else if (variavel == conta2) {
+					variavel = conta3;
+				} 
+			}
+			agenda1.setContatos(contatos);
+			variavel = conta;
+
+			for (Contato variavel2 : agenda1.getContatos()) {
+				
+				System.out.println();
+				System.out.println( " Agenda: " + agenda1.getNome());
+				System.out.println();
+
+				System.out.println(variavel2.getNome());
+				System.out.println(variavel2.getTelefone());
+				System.out.println(variavel2.getEmail());
+
+				
+				if (variavel2 == conta) {
+					variavel2 = conta2;
+				} else if (variavel2 == conta2) {
+					variavel = conta3;
+				}
+
+			}
+
+		}
+
+	}
+}

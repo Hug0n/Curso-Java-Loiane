@@ -1,0 +1,76 @@
+package com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1;
+
+import java.util.Scanner;
+
+import com.loiane.cursojava.aula28a33exerc.Const_Encaps_OverL.exerc2.ContaCorrente;
+
+public class TesteContas {
+	
+	static Scanner e = new Scanner(System.in);
+	private static String nomePessoa;
+
+
+	public static void main(String[] args) {
+
+		
+		ContaPoupanca cPoupa = new ContaPoupanca();
+		ContaEspecial cEspecial = new ContaEspecial();
+		ContaBancaria cBancaria = new ContaPoupanca();
+
+		
+		
+	}
+	
+	private static void loop() {
+
+		boolean loop = true;
+		int opcao = 0;
+
+		ContaCorrente variavelConta = Pessoa1;
+		nomePessoa = "Pessoa 1";
+
+		while (loop) {
+
+			System.out.println("\nQual operação deseja executar " + nomePessoa + "?");
+			System.out.println("1 - Saque");
+			System.out.println("2 - Depósito");
+			System.out.println("3 - Consulta");
+			System.out.println("4 - Informações sobre Conta Especial");
+			System.out.println("5 - Trocar de Usuário");
+			System.out.println("6 - Sair");
+
+			opcao = e.nextInt();
+
+			if (opcao == 1) {
+				System.out.println("Digite o valor do saque: ");
+				variavelConta.sacar(e.nextDouble());
+			} else if (opcao == 2) {
+				System.out.println("Digite o valor do depósito: ");
+				variavelConta.depositar(e.nextDouble());
+			} else if (opcao == 3) {
+				variavelConta.consultar();
+			} else if (opcao == 4) {
+				variavelConta.verificarChequeEspecial();
+			} else if (opcao == 5) {
+				variavelConta = verificarPessoa(variavelConta);
+			} else if (opcao == 6) {
+				loop = false;
+				System.out.println("Agradecemos a sua preferência. Queremos te ver de novo em breve!");
+
+			}
+		}
+	}
+	
+	private static ContaCorrente verificarPessoa(ContaCorrente variavelConta) {
+		if (variavelConta == Pessoa1) {
+			variavelConta = Pessoa2;
+			nomePessoa = "Pessoa 2";
+		} else {
+			variavelConta = Pessoa1;
+			nomePessoa = "Pessoa 1";
+		}
+		System.out.println("Usuário alterado!");
+		return variavelConta;
+	}
+}
+

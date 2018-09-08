@@ -3,6 +3,10 @@
 <fullyQualifiedTypeName name="com.aulajava.heranca.Passaro"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.loiane.cursojava.aula35exerc.MetodosRecursivos.exerc1.Fibonacci"/>
+<fullyQualifiedTypeName name="com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1.ContaPoupanca"/>
+<fullyQualifiedTypeName name="com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1.ContaBancaria"/>
+<fullyQualifiedTypeName name="com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1.ContaEspecial"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
