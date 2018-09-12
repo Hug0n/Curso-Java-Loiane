@@ -1,0 +1,67 @@
+package com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1;
+
+public class ContaEspecial extends ContaBancaria{
+	
+	private double limite = 300;
+	private double total;
+	private double resultado;
+
+
+	//-----
+	
+	@Override
+	 void  sacar(double valor) {
+		//|| valor < 0
+		if(valor > 0) {
+			if (valor > getSaldoConta() ) {
+				if(valor > limite) {
+					System.out.println("Valor maior que o limite disponível!");
+				}else if(valor <= (limite + getSaldoConta())) {
+					total = limite + getSaldoConta(); //800
+					total -= valor;
+					limite = total;
+					resultado = getSaldoConta() - valor;
+					setSaldoConta(resultado);
+					System.out.println("Limite: " + limite );
+
+					System.out.println("Saque de " + valor + " realizado com o limite especial!");
+				}
+			}else {
+				resultado = getSaldoConta() - valor;
+				super.setSaldoConta(resultado);
+				System.out.println("Saque de R$" + valor + " realizado com sucesso!");
+			}	
+		}else {
+			System.out.println("Digite um valor maior que 0!");
+		}
+	}
+	//-----
+	
+
+	void depositar (double valor) {
+		if ( valor <= 0) {
+			System.out.println("Valor inválido! Digite um valor maior que 0.");
+		}else if (getSaldoConta() >= 0){
+			resultado = getSaldoConta() + valor;
+			setSaldoConta(resultado);
+			System.out.println("Depósito de " + valor + " realizado com sucesso!");
+		}else if (getSaldoConta() < 0) {
+			resultado = getSaldoConta() + valor;
+			limite += +(getSaldoConta());
+			setSaldoConta(resultado);
+			System.out.println("Depósito de " + valor + " realizado com sucesso!");
+		}
+	}
+
+	
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	
+
+}

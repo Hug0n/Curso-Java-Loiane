@@ -1,0 +1,33 @@
+package com.loiane.cursojava.aula36exerc.Relacionamentos_entre_Classes.exerc1;
+
+import java.util.Scanner;
+
+public class TestAgenda {
+
+	private static Scanner e;
+
+	public static void main(String[] args) {
+
+		e = new Scanner(System.in);
+
+		System.out.println("Quantos contatos deseja Cadastrar na Agenda?");
+		int qtdContacts = e.nextInt();
+		qtdContacts -= 1;
+
+		if (qtdContacts < 0) {
+			Contato[] contatos = new Contato[qtdContacts];
+
+			Agenda agenda1 = new Agenda();
+			System.out.println("Quantos contatos deseja Cadastrar na Agenda?");
+
+			System.out.println("Quantos contatos deseja Cadastrar na Agenda?");
+
+			for (int i = 0; i < qtdContacts; i++) {
+
+			}
+
+		}
+
+	}
+
+}

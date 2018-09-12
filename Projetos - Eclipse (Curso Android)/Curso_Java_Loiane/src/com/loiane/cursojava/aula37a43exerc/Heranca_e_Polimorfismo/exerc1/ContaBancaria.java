@@ -1,0 +1,54 @@
+package com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1;
+
+public class ContaBancaria {
+	
+	private String nomeCliente;
+	private int numConta;
+	private double saldoConta;
+
+	//-----
+
+	void sacar (double valor) {
+		if (valor > saldoConta || valor < 0) {
+			System.out.println("Valor inválido!");
+		}else {
+			saldoConta -= valor;
+			System.out.println("Saque de R$" + valor + " realizado com sucesso!");
+		}
+	}
+	
+	void depositar (double valor) {
+		if ( valor <= 0) {
+			System.out.println("Valor inválido! Digite um valor maior que 0.");
+		}else {
+			saldoConta += valor;
+			System.out.println("Depósito de " + valor + " realizado com sucesso!");
+		}
+	}
+	
+	//-----
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+	public int getNumConta() {
+		return numConta;
+	}
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+	public double getSaldoConta() {
+		return saldoConta;
+	}
+	public void setSaldoConta(double saldoConta) {
+		this.saldoConta = saldoConta;
+	}
+	
+	
+	
+	
+
+}

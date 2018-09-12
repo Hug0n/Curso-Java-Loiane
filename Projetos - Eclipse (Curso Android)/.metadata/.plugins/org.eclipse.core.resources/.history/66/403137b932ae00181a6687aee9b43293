@@ -1,0 +1,7 @@
+package com.loiane.cursojava.aula36exerc.Relacionamentos_entre_Classes.exerc1;
+
+public class Agenda {
+
+	String nome;
+	
+}

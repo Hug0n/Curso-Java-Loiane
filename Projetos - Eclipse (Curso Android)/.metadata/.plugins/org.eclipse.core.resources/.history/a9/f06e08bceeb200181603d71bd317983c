@@ -1,0 +1,33 @@
+package com.loiane.cursojava.aula37a43exerc.Heranca_e_Polimorfismo.exerc1;
+
+public class ContaEspecial extends ContaBancaria{
+	
+	private double limite = 300;
+
+	//-----
+	
+	@Override
+	 void  sacar(double valor) {
+		//|| valor < 0
+		if (valor > getSaldoConta() ) {
+			System.out.println("Valor inválido ou limite insuficiente!");
+		}else {
+			double resultado = getSaldoConta() - valor;
+			super.setSaldoConta(resultado);
+			System.out.println("Saque de R$" + valor + " realizado com sucesso!");
+		}	}
+	
+	//-----
+
+	
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+	
+	
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Curso_Java_Loiane/src/com/loiane/cursojava/aula35exerc/MetodosRecursivos/exerc2/SomatorioTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.loiane.cursojava.aula35exerc.MetodosRecursivos.exerc2.SomatorioTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Curso_Java_Loiane"/>
+</launchConfiguration>
