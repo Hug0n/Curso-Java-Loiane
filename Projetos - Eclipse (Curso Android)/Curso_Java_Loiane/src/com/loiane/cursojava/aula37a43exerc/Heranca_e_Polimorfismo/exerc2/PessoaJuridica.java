@@ -17,7 +17,7 @@ public class PessoaJuridica extends Contribuinte{
 	void calcularImpostoPJ() {
 			aux = rendaBruta * porcentagem;
 			rendaBruta -= aux;
-			System.out.println("O desconto baseado em sua renda foi de R$" + aux + ". Sua renda bruta atual ï¿½ de R$" + rendaBruta + "!");
+			System.out.println("O desconto baseado em sua renda foi de R$" + aux + ". Sua renda bruta atual é de R$" + rendaBruta + "!");
 	}
 	
 	//---
@@ -32,3 +32,4 @@ public class PessoaJuridica extends Contribuinte{
 	
 	
 	
+}
